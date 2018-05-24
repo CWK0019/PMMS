@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+body{
+    background-color: #F9F9F9;
+}
+.V5KF{
+    min-width: 1032px;
+    margin:0 auto;
+    padding:0 20px;
+}
+/*wrap-search*/
+.wrap-search{
+    position: relative;
+    margin:23px auto 0;
+    background-color:#E0EAF6;
+    border:1px solid #CED2D7;
+}
+
+.wrap-search  #prompt{
+    display: none;
+    position: absolute;
+    top:36px;
+    left: 189px;
+    z-index: 9999;
+    width:106px;
+    border: 1px solid #1E90FF;
+    background-color:#fff;
+    font-size:12px;
+    text-indent:10px;
+}
+.wrap-search  #prompt li:hover{
+    background-color:#1E90FF;
+    color:#fff;
+}
+.wrap-search #status{
+    position: absolute;
+    top: 10.5px;
+    left: 48px;
+    width:80px;
+    height:24px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+/*wrap-content*/
+.wrap-content{
+    width:100%;
+    margin:7.5px auto 0;
+}
+.wrap-content .c-box{
+    background-color:#F3F3F4;
+}
+.wrap-content .content{
+    width:1032px;
+    margin:0 auto;
+    padding: 7.5px 0;
+}
+.wrap-content .content li.businessCard{
+    float:left;
+    margin:7.5px  3px 7.5px;
+    border:1px solid #D2D3D4;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+}
+/*Start 状态*/
+li.businessCard  div.busyness,
+li.businessCard div.leave,
+li.businessCard div.On-line,
+li.businessCard div.Invisible{
+    background-color:#fff;
+}
+li.businessCard div.Off-line{
+    background-color:#E7E7EB;
+}
+/*忙碌*/
+li.businessCard  div.busyness .left{
+    background-color:#D8EBEB;
+    border-color:#D8EBEB;
+}
+/*离开*/
+li.businessCard div.leave .left{
+    background-color:#E8DED4;
+    border-color:#E8DED4;
+}
+/*在线*/
+li.businessCard div.On-line .left{
+    background-color:#DBE5F1;
+    border-color:#DBE5F1;
+}
+/*离线*/
+li.businessCard div.Off-line .left{
+    background-color:#d0d0d0;
+    border-color:#d0d0d0;
+}
+/*隐身*/
+li.businessCard div.Invisible .left{
+    background-color:#DBE5D2;
+    border-color:#DBE5D2;
+}
+/*End 状态*/
+.wrap-content  li.businessCard a{
+    cursor:default;
+}
+.wrap-content  li.businessCard a > div{
+    position:relative;
+    width:250px;
+    height:142px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+li.businessCard a > div.on{
+    background-color:#FCFFCB;
+}
+li.businessCard a > div .details{
+    position:absolute;
+    top:-1px;
+    right:-1px;
+    z-index:999;
+    border:17.5px solid #F3F3F5;
+    border-left-color:transparent;
+    border-bottom-color:transparent;
+    cursor:move;
+}
+.details i{
+    position:absolute;
+    left:0px;
+    height:2px;
+    background-color:#D2D3D4;
+}
+.details i:nth-child(1){
+    top:-12px;
+    width:12px;
+}
+.details i:nth-child(2){
+    top:-7px;
+    width:8px;
+}
+.details i:nth-child(3){
+    top:-2px;
+    width:12px;
+}
+.details i:nth-child(4){
+    top:0px;
+    left:-24.6px;
+    width:49px;
+    height:1px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+}
+li.businessCard a > div .current{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:888;
+    width:100%;
+    height:100%;
+    background-color:#fcf8e3;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+.current .c-left,
+.current .c-right{
+    float:left;
+    width:50%;
+    height:100%;
+}
+.current .c-left{
+    text-align:right;
+}
+.current .c-left p{
+    margin-right:3px;
+}
+.current .c-right p{
+    margin-left:3px;
+}
+.current .c-left p,
+.current .c-right p{
+    margin-bottom:1.5px;
+}
+.current .c-left p:nth-child(1),
+.current .c-right p:nth-child(1){
+    height:42px;
+    line-height:42px;
+}
+.current .c-left p:nth-child(1){
+    margin-right:-2px;
+}
+.current .c-right p:nth-child(1){
+    line-height:45px;
+}
+.current .c-left p:nth-child(1) img{
+    margin-right:3px;
+}
+.current .c-left p:nth-child(1) img,
+.current .c-left p:nth-child(1) span{
+    vertical-align:middle;
+}
+.current .c-right{
+    text-align:left;
+}
+
+li.businessCard a > div .current p{
+    height:16px;
+    text-indent:5px;
+}
+li.businessCard a > div .current p span{
+    margin-right:5px;
+}
+.content li .left{
+    position: absolute;
+    top:18px;
+    left:18px;
+    width:56px;
+    height:56px;
+    border:2px solid #fff;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.content li .left .headPortrait{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.content li .right{
+    position:absolute;
+    top:20px;
+    left:95px;
+    height:70px;
+    padding:5px 0;
+}
+.content li .right .r-content{
+    height:70px;
+}
+.right .r-content p{
+    float: left;
+    margin: 0 12px 2px 0;
+}
+.right .r-content #num{
+    display: none;
+}
+.right .r-content .state{
+    position: relative;
+}
+.right .r-content .state img,
+.right .r-content .state span{
+    vertical-align: middle;
+}
+.right .r-content .state span{
+    margin-left:0px;
+}
+.right .r-content .time{
+    height:21px;
+    line-height:24px;
+}
+.right .r-content .name{
+    margin-right:2px;
+    color:#000;
+    font:18px  'Microsoft YaHei','微软雅黑';
+}
+.right .r-content #JobNumber{
+    color:#B2B3B4;
+    font:12px 'Microsoft YaHei','微软雅黑';
+}
+.right .r-content .name,
+.right .r-content #JobNumber{
+    display:inline-block;
+}
+.content li .right .Dialogue{
+    position:absolute;
+    bottom:-42px;
+    left:-77px;
+    width:214px;
+    height:43px;
+    line-height:38px;
+    border-top:1px solid #D2D3D4;
+}
+.right .Dialogue p{
+    display:inline-block;
+    margin-right:4px;
+    vertical-align: middle;
+}
+.right .Dialogue p.dialogue{
+    width:18px;
+    height:18px;
+    margin-right:2px;
+}
+div.On-line .right .Dialogue p.dialogue,
+div.leave .right .Dialogue p.dialogue,
+div.busyness .right .Dialogue p.dialogue,
+div.Invisible .right .Dialogue p.dialogue{
+    background:url("../images/6.png");
+}
+div.Off-line .right .Dialogue p.dialogue{
+    background:url("../images/1.png");
+}
+.right .Dialogue span{
+    margin-right:5px;
+    vertical-align: middle;
+}
+#OnLines b,
+#online b,
+#Leave b,
+#Invisibles b,
+#OffLine b,
+#mode{
+    display: none;
+}
