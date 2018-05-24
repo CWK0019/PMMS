@@ -94,7 +94,7 @@ window.onload = function(){
 function change() {
     $.ajax({
         url: Datas.url,
-        type: "post",
+        type: "POST",
         dataType: "json",
         contentType: "application/json;charset=UTF-8",
         beforeSend: function () {
