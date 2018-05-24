@@ -86,9 +86,9 @@ $(function (){
     whole();
 });
 
-window.load(function() {
+window.onload = function(){
     setInterval(change, Datas.time);
-})
+}
 
 /*内容初始化全局变量*/
 function change() {
